@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "GOzTRo8GOtCm5DbPgVIRck+7XWsQGa+Z74TfxTlKQOg=",
+  "Source": "poliklinikaApi",
+  "BasePath": "_content/poliklinikaApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

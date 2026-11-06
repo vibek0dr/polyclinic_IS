@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище user84_dbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="KP_Pacienty">
+          <Key>
+            <PropertyRef Name="Kod_pacienta" />
+          </Key>
+          <Property Name="Kod_pacienta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Familiya" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Imya" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Otchestvo" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Data_rozhdeniya" Type="date" Nullable="false" />
+          <Property Name="Pol" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Nomer_polisa" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="200" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="KP_Polzovateli">
+          <Key>
+            <PropertyRef Name="Kod_polzovatelya" />
+          </Key>
+          <Property Name="Kod_polzovatelya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Parol" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Kod_roli" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Raspisanie">
+          <Key>
+            <PropertyRef Name="Kod_slota" />
+          </Key>
+          <Property Name="Kod_slota" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod_vracha" Type="int" Nullable="false" />
+          <Property Name="Data_priema" Type="date" Nullable="false" />
+          <Property Name="Vremya_nachala" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Vremya_okonchaniya" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Status" Type="int" />
+        </EntityType>
+        <EntityType Name="KP_Rezultaty_priema">
+          <Key>
+            <PropertyRef Name="Kod_rezultata" />
+          </Key>
+          <Property Name="Kod_rezultata" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod_zapisi" Type="int" Nullable="false" />
+          <Property Name="Zhaloby" Type="nvarchar(max)" />
+          <Property Name="Diagnoz" Type="nvarchar" MaxLength="255" />
+          <Property Name="Naznacheniya" Type="nvarchar(max)" />
+          <Property Name="Rekomendacii" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="KP_Roli">
+          <Key>
+            <PropertyRef Name="Kod_roli" />
+          </Key>
+          <Property Name="Kod_roli" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazvanie_roli" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Specializacii">
+          <Key>
+            <PropertyRef Name="Kod_specializacii" />
+          </Key>
+          <Property Name="Kod_specializacii" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazvanie_specializacii" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Status_Vracha">
+          <Key>
+            <PropertyRef Name="Kod_Statusa" />
+          </Key>
+          <Property Name="Kod_Statusa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="KP_Status_zapisi">
+          <Key>
+            <PropertyRef Name="Kod_Statusa" />
+          </Key>
+          <Property Name="Kod_Statusa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Uslugi">
+          <Key>
+            <PropertyRef Name="Kod_uslugi" />
+          </Key>
+          <Property Name="Kod_uslugi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Stoimost" Type="int" Nullable="false" />
+          <Property Name="image" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Uslugi_Zapisi">
+          <Key>
+            <PropertyRef Name="Kod_uslugi_zapisi" />
+          </Key>
+          <Property Name="Kod_uslugi_zapisi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod_Uslugi" Type="int" Nullable="false" />
+          <Property Name="Kod_Zapisi" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Vrachi">
+          <Key>
+            <PropertyRef Name="Kod_vracha" />
+          </Key>
+          <Property Name="Kod_vracha" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod_polzovatelya" Type="int" Nullable="false" />
+          <Property Name="Familiya" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Imya" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Otchestvo" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Kod_specializacii" Type="int" Nullable="false" />
+          <Property Name="Nomer_kabineta" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KP_Zapisi_na_priem">
+          <Key>
+            <PropertyRef Name="Kod_zapisi" />
+          </Key>
+          <Property Name="Kod_zapisi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod_pacienta" Type="int" Nullable="false" />
+          <Property Name="Kod_slota" Type="int" Nullable="false" />
+          <Property Name="Data_sozdaniya" Type="datetime" Nullable="false" />
+          <Property Name="Status_zapisi" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__KP_Polzov__Kod_r__430CD787">
+          <End Role="KP_Roli" Type="Self.KP_Roli" Multiplicity="1" />
+          <End Role="KP_Polzovateli" Type="Self.KP_Polzovateli" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Roli">
+              <PropertyRef Name="Kod_roli" />
+            </Principal>
+            <Dependent Role="KP_Polzovateli">
+              <PropertyRef Name="Kod_roli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Raspis__Kod_v__5066D2A5">
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="1" />
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Vrachi">
+              <PropertyRef Name="Kod_vracha" />
+            </Principal>
+            <Dependent Role="KP_Raspisanie">
+              <PropertyRef Name="Kod_vracha" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Rezult__Kod_z__5BD88551">
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="1" />
+          <End Role="KP_Rezultaty_priema" Type="Self.KP_Rezultaty_priema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_zapisi" />
+            </Principal>
+            <Dependent Role="KP_Rezultaty_priema">
+              <PropertyRef Name="Kod_zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Vrachi__Kod_p__47D18CA4">
+          <End Role="KP_Polzovateli" Type="Self.KP_Polzovateli" Multiplicity="1" />
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Polzovateli">
+              <PropertyRef Name="Kod_polzovatelya" />
+            </Principal>
+            <Dependent Role="KP_Vrachi">
+              <PropertyRef Name="Kod_polzovatelya" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Vrachi__Kod_s__48C5B0DD">
+          <End Role="KP_Specializacii" Type="Self.KP_Specializacii" Multiplicity="1" />
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Specializacii">
+              <PropertyRef Name="Kod_specializacii" />
+            </Principal>
+            <Dependent Role="KP_Vrachi">
+              <PropertyRef Name="Kod_specializacii" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Zapisi__Kod_p__5713D034">
+          <End Role="KP_Pacienty" Type="Self.KP_Pacienty" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Pacienty">
+              <PropertyRef Name="Kod_pacienta" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_pacienta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Zapisi__Kod_s__5807F46D">
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Raspisanie">
+              <PropertyRef Name="Kod_slota" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_slota" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Raspisanie_KP_Status_Vracha">
+          <End Role="KP_Status_Vracha" Type="Self.KP_Status_Vracha" Multiplicity="0..1" />
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Status_Vracha">
+              <PropertyRef Name="Kod_Statusa" />
+            </Principal>
+            <Dependent Role="KP_Raspisanie">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Uslugi_Zapisi_KP_Uslugi">
+          <End Role="KP_Uslugi" Type="Self.KP_Uslugi" Multiplicity="1" />
+          <End Role="KP_Uslugi_Zapisi" Type="Self.KP_Uslugi_Zapisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Uslugi">
+              <PropertyRef Name="Kod_uslugi" />
+            </Principal>
+            <Dependent Role="KP_Uslugi_Zapisi">
+              <PropertyRef Name="Kod_Uslugi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem">
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="1" />
+          <End Role="KP_Uslugi_Zapisi" Type="Self.KP_Uslugi_Zapisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_zapisi" />
+            </Principal>
+            <Dependent Role="KP_Uslugi_Zapisi">
+              <PropertyRef Name="Kod_Zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Zapisi_na_priem_KP_Status_zapisi">
+          <End Role="KP_Status_zapisi" Type="Self.KP_Status_zapisi" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Status_zapisi">
+              <PropertyRef Name="Kod_Statusa" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Status_zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище user84_dbModelContainer">
+          <EntitySet Name="KP_Pacienty" EntityType="Self.KP_Pacienty" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Polzovateli" EntityType="Self.KP_Polzovateli" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Raspisanie" EntityType="Self.KP_Raspisanie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Rezultaty_priema" EntityType="Self.KP_Rezultaty_priema" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Roli" EntityType="Self.KP_Roli" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Specializacii" EntityType="Self.KP_Specializacii" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Status_Vracha" EntityType="Self.KP_Status_Vracha" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Status_zapisi" EntityType="Self.KP_Status_zapisi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Uslugi" EntityType="Self.KP_Uslugi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Uslugi_Zapisi" EntityType="Self.KP_Uslugi_Zapisi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Vrachi" EntityType="Self.KP_Vrachi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KP_Zapisi_na_priem" EntityType="Self.KP_Zapisi_na_priem" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__KP_Polzov__Kod_r__430CD787" Association="Self.FK__KP_Polzov__Kod_r__430CD787">
+            <End Role="KP_Roli" EntitySet="KP_Roli" />
+            <End Role="KP_Polzovateli" EntitySet="KP_Polzovateli" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Raspis__Kod_v__5066D2A5" Association="Self.FK__KP_Raspis__Kod_v__5066D2A5">
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Rezult__Kod_z__5BD88551" Association="Self.FK__KP_Rezult__Kod_z__5BD88551">
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+            <End Role="KP_Rezultaty_priema" EntitySet="KP_Rezultaty_priema" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Vrachi__Kod_p__47D18CA4" Association="Self.FK__KP_Vrachi__Kod_p__47D18CA4">
+            <End Role="KP_Polzovateli" EntitySet="KP_Polzovateli" />
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Vrachi__Kod_s__48C5B0DD" Association="Self.FK__KP_Vrachi__Kod_s__48C5B0DD">
+            <End Role="KP_Specializacii" EntitySet="KP_Specializacii" />
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Zapisi__Kod_p__5713D034" Association="Self.FK__KP_Zapisi__Kod_p__5713D034">
+            <End Role="KP_Pacienty" EntitySet="KP_Pacienty" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Zapisi__Kod_s__5807F46D" Association="Self.FK__KP_Zapisi__Kod_s__5807F46D">
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Raspisanie_KP_Status_Vracha" Association="Self.FK_KP_Raspisanie_KP_Status_Vracha">
+            <End Role="KP_Status_Vracha" EntitySet="KP_Status_Vracha" />
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Uslugi_Zapisi_KP_Uslugi" Association="Self.FK_KP_Uslugi_Zapisi_KP_Uslugi">
+            <End Role="KP_Uslugi" EntitySet="KP_Uslugi" />
+            <End Role="KP_Uslugi_Zapisi" EntitySet="KP_Uslugi_Zapisi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem" Association="Self.FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem">
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+            <End Role="KP_Uslugi_Zapisi" EntitySet="KP_Uslugi_Zapisi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Zapisi_na_priem_KP_Status_zapisi" Association="Self.FK_KP_Zapisi_na_priem_KP_Status_zapisi">
+            <End Role="KP_Status_zapisi" EntitySet="KP_Status_zapisi" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="user84_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="KP_Pacienty">
+          <Key>
+            <PropertyRef Name="Kod_pacienta" />
+          </Key>
+          <Property Name="Kod_pacienta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Familiya" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Imya" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Otchestvo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Data_rozhdeniya" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Pol" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nomer_polisa" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KP_Zapisi_na_priem" Relationship="Self.FK__KP_Zapisi__Kod_p__5713D034" FromRole="KP_Pacienty" ToRole="KP_Zapisi_na_priem" />
+        </EntityType>
+        <EntityType Name="KP_Polzovateli">
+          <Key>
+            <PropertyRef Name="Kod_polzovatelya" />
+          </Key>
+          <Property Name="Kod_polzovatelya" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Parol" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Kod_roli" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="KP_Roli" Relationship="Self.FK__KP_Polzov__Kod_r__430CD787" FromRole="KP_Polzovateli" ToRole="KP_Roli" />
+          <NavigationProperty Name="KP_Vrachi" Relationship="Self.FK__KP_Vrachi__Kod_p__47D18CA4" FromRole="KP_Polzovateli" ToRole="KP_Vrachi" />
+        </EntityType>
+        <EntityType Name="KP_Raspisanie">
+          <Key>
+            <PropertyRef Name="Kod_slota" />
+          </Key>
+          <Property Name="Kod_slota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod_vracha" Type="Int32" Nullable="false" />
+          <Property Name="Data_priema" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Vremya_nachala" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Vremya_okonchaniya" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Status" Type="Int32" />
+          <NavigationProperty Name="KP_Vrachi" Relationship="Self.FK__KP_Raspis__Kod_v__5066D2A5" FromRole="KP_Raspisanie" ToRole="KP_Vrachi" />
+          <NavigationProperty Name="KP_Zapisi_na_priem" Relationship="Self.FK__KP_Zapisi__Kod_s__5807F46D" FromRole="KP_Raspisanie" ToRole="KP_Zapisi_na_priem" />
+          <NavigationProperty Name="KP_Status_Vracha" Relationship="Self.FK_KP_Raspisanie_KP_Status_Vracha" FromRole="KP_Raspisanie" ToRole="KP_Status_Vracha" />
+        </EntityType>
+        <EntityType Name="KP_Rezultaty_priema">
+          <Key>
+            <PropertyRef Name="Kod_rezultata" />
+          </Key>
+          <Property Name="Kod_rezultata" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod_zapisi" Type="Int32" Nullable="false" />
+          <Property Name="Zhaloby" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Diagnoz" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Naznacheniya" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Rekomendacii" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KP_Zapisi_na_priem" Relationship="Self.FK__KP_Rezult__Kod_z__5BD88551" FromRole="KP_Rezultaty_priema" ToRole="KP_Zapisi_na_priem" />
+        </EntityType>
+        <EntityType Name="KP_Roli">
+          <Key>
+            <PropertyRef Name="Kod_roli" />
+          </Key>
+          <Property Name="Kod_roli" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazvanie_roli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KP_Polzovateli" Relationship="Self.FK__KP_Polzov__Kod_r__430CD787" FromRole="KP_Roli" ToRole="KP_Polzovateli" />
+        </EntityType>
+        <EntityType Name="KP_Specializacii">
+          <Key>
+            <PropertyRef Name="Kod_specializacii" />
+          </Key>
+          <Property Name="Kod_specializacii" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazvanie_specializacii" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KP_Vrachi" Relationship="Self.FK__KP_Vrachi__Kod_s__48C5B0DD" FromRole="KP_Specializacii" ToRole="KP_Vrachi" />
+        </EntityType>
+        <EntityType Name="KP_Status_Vracha">
+          <Key>
+            <PropertyRef Name="Kod_Statusa" />
+          </Key>
+          <Property Name="Kod_Statusa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazvanie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KP_Raspisanie" Relationship="Self.FK_KP_Raspisanie_KP_Status_Vracha" FromRole="KP_Status_Vracha" ToRole="KP_Raspisanie" />
+        </EntityType>
+        <EntityType Name="KP_Status_zapisi">
+          <Key>
+            <PropertyRef Name="Kod_Statusa" />
+          </Key>
+          <Property Name="Kod_Statusa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazvanie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KP_Zapisi_na_priem" Relationship="Self.FK_KP_Zapisi_na_priem_KP_Status_zapisi" FromRole="KP_Status_zapisi" ToRole="KP_Zapisi_na_priem" />
+        </EntityType>
+        <EntityType Name="KP_Uslugi">
+          <Key>
+            <PropertyRef Name="Kod_uslugi" />
+          </Key>
+          <Property Name="Kod_uslugi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazvanie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Stoimost" Type="Int32" Nullable="false" />
+          <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KP_Uslugi_Zapisi" Relationship="Self.FK_KP_Uslugi_Zapisi_KP_Uslugi" FromRole="KP_Uslugi" ToRole="KP_Uslugi_Zapisi" />
+        </EntityType>
+        <EntityType Name="KP_Uslugi_Zapisi">
+          <Key>
+            <PropertyRef Name="Kod_uslugi_zapisi" />
+          </Key>
+          <Property Name="Kod_uslugi_zapisi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod_Uslugi" Type="Int32" Nullable="false" />
+          <Property Name="Kod_Zapisi" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="KP_Uslugi" Relationship="Self.FK_KP_Uslugi_Zapisi_KP_Uslugi" FromRole="KP_Uslugi_Zapisi" ToRole="KP_Uslugi" />
+          <NavigationProperty Name="KP_Zapisi_na_priem" Relationship="Self.FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem" FromRole="KP_Uslugi_Zapisi" ToRole="KP_Zapisi_na_priem" />
+        </EntityType>
+        <EntityType Name="KP_Vrachi">
+          <Key>
+            <PropertyRef Name="Kod_vracha" />
+          </Key>
+          <Property Name="Kod_vracha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod_polzovatelya" Type="Int32" Nullable="false" />
+          <Property Name="Familiya" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Imya" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Otchestvo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Kod_specializacii" Type="Int32" Nullable="false" />
+          <Property Name="Nomer_kabineta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KP_Polzovateli" Relationship="Self.FK__KP_Vrachi__Kod_p__47D18CA4" FromRole="KP_Vrachi" ToRole="KP_Polzovateli" />
+          <NavigationProperty Name="KP_Raspisanie" Relationship="Self.FK__KP_Raspis__Kod_v__5066D2A5" FromRole="KP_Vrachi" ToRole="KP_Raspisanie" />
+          <NavigationProperty Name="KP_Specializacii" Relationship="Self.FK__KP_Vrachi__Kod_s__48C5B0DD" FromRole="KP_Vrachi" ToRole="KP_Specializacii" />
+        </EntityType>
+        <EntityType Name="KP_Zapisi_na_priem">
+          <Key>
+            <PropertyRef Name="Kod_zapisi" />
+          </Key>
+          <Property Name="Kod_zapisi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod_pacienta" Type="Int32" Nullable="false" />
+          <Property Name="Kod_slota" Type="Int32" Nullable="false" />
+          <Property Name="Data_sozdaniya" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status_zapisi" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="KP_Pacienty" Relationship="Self.FK__KP_Zapisi__Kod_p__5713D034" FromRole="KP_Zapisi_na_priem" ToRole="KP_Pacienty" />
+          <NavigationProperty Name="KP_Raspisanie" Relationship="Self.FK__KP_Zapisi__Kod_s__5807F46D" FromRole="KP_Zapisi_na_priem" ToRole="KP_Raspisanie" />
+          <NavigationProperty Name="KP_Rezultaty_priema" Relationship="Self.FK__KP_Rezult__Kod_z__5BD88551" FromRole="KP_Zapisi_na_priem" ToRole="KP_Rezultaty_priema" />
+          <NavigationProperty Name="KP_Status_zapisi" Relationship="Self.FK_KP_Zapisi_na_priem_KP_Status_zapisi" FromRole="KP_Zapisi_na_priem" ToRole="KP_Status_zapisi" />
+          <NavigationProperty Name="KP_Uslugi_Zapisi" Relationship="Self.FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem" FromRole="KP_Zapisi_na_priem" ToRole="KP_Uslugi_Zapisi" />
+        </EntityType>
+        <Association Name="FK__KP_Zapisi__Kod_p__5713D034">
+          <End Role="KP_Pacienty" Type="Self.KP_Pacienty" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Pacienty">
+              <PropertyRef Name="Kod_pacienta" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_pacienta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Polzov__Kod_r__430CD787">
+          <End Role="KP_Roli" Type="Self.KP_Roli" Multiplicity="1" />
+          <End Role="KP_Polzovateli" Type="Self.KP_Polzovateli" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Roli">
+              <PropertyRef Name="Kod_roli" />
+            </Principal>
+            <Dependent Role="KP_Polzovateli">
+              <PropertyRef Name="Kod_roli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Vrachi__Kod_p__47D18CA4">
+          <End Role="KP_Polzovateli" Type="Self.KP_Polzovateli" Multiplicity="1" />
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Polzovateli">
+              <PropertyRef Name="Kod_polzovatelya" />
+            </Principal>
+            <Dependent Role="KP_Vrachi">
+              <PropertyRef Name="Kod_polzovatelya" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Raspis__Kod_v__5066D2A5">
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="1" />
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Vrachi">
+              <PropertyRef Name="Kod_vracha" />
+            </Principal>
+            <Dependent Role="KP_Raspisanie">
+              <PropertyRef Name="Kod_vracha" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Zapisi__Kod_s__5807F46D">
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Raspisanie">
+              <PropertyRef Name="Kod_slota" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_slota" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Raspisanie_KP_Status_Vracha">
+          <End Role="KP_Status_Vracha" Type="Self.KP_Status_Vracha" Multiplicity="0..1" />
+          <End Role="KP_Raspisanie" Type="Self.KP_Raspisanie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Status_Vracha">
+              <PropertyRef Name="Kod_Statusa" />
+            </Principal>
+            <Dependent Role="KP_Raspisanie">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Rezult__Kod_z__5BD88551">
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="1" />
+          <End Role="KP_Rezultaty_priema" Type="Self.KP_Rezultaty_priema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_zapisi" />
+            </Principal>
+            <Dependent Role="KP_Rezultaty_priema">
+              <PropertyRef Name="Kod_zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KP_Vrachi__Kod_s__48C5B0DD">
+          <End Role="KP_Specializacii" Type="Self.KP_Specializacii" Multiplicity="1" />
+          <End Role="KP_Vrachi" Type="Self.KP_Vrachi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Specializacii">
+              <PropertyRef Name="Kod_specializacii" />
+            </Principal>
+            <Dependent Role="KP_Vrachi">
+              <PropertyRef Name="Kod_specializacii" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Zapisi_na_priem_KP_Status_zapisi">
+          <End Role="KP_Status_zapisi" Type="Self.KP_Status_zapisi" Multiplicity="1" />
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Status_zapisi">
+              <PropertyRef Name="Kod_Statusa" />
+            </Principal>
+            <Dependent Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Status_zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Uslugi_Zapisi_KP_Uslugi">
+          <End Role="KP_Uslugi" Type="Self.KP_Uslugi" Multiplicity="1" />
+          <End Role="KP_Uslugi_Zapisi" Type="Self.KP_Uslugi_Zapisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Uslugi">
+              <PropertyRef Name="Kod_uslugi" />
+            </Principal>
+            <Dependent Role="KP_Uslugi_Zapisi">
+              <PropertyRef Name="Kod_Uslugi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem">
+          <End Role="KP_Zapisi_na_priem" Type="Self.KP_Zapisi_na_priem" Multiplicity="1" />
+          <End Role="KP_Uslugi_Zapisi" Type="Self.KP_Uslugi_Zapisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KP_Zapisi_na_priem">
+              <PropertyRef Name="Kod_zapisi" />
+            </Principal>
+            <Dependent Role="KP_Uslugi_Zapisi">
+              <PropertyRef Name="Kod_Zapisi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="user84_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="KP_Pacienty" EntityType="Self.KP_Pacienty" />
+          <EntitySet Name="KP_Polzovateli" EntityType="Self.KP_Polzovateli" />
+          <EntitySet Name="KP_Raspisanie" EntityType="Self.KP_Raspisanie" />
+          <EntitySet Name="KP_Rezultaty_priema" EntityType="Self.KP_Rezultaty_priema" />
+          <EntitySet Name="KP_Roli" EntityType="Self.KP_Roli" />
+          <EntitySet Name="KP_Specializacii" EntityType="Self.KP_Specializacii" />
+          <EntitySet Name="KP_Status_Vracha" EntityType="Self.KP_Status_Vracha" />
+          <EntitySet Name="KP_Status_zapisi" EntityType="Self.KP_Status_zapisi" />
+          <EntitySet Name="KP_Uslugi" EntityType="Self.KP_Uslugi" />
+          <EntitySet Name="KP_Uslugi_Zapisi" EntityType="Self.KP_Uslugi_Zapisi" />
+          <EntitySet Name="KP_Vrachi" EntityType="Self.KP_Vrachi" />
+          <EntitySet Name="KP_Zapisi_na_priem" EntityType="Self.KP_Zapisi_na_priem" />
+          <AssociationSet Name="FK__KP_Zapisi__Kod_p__5713D034" Association="Self.FK__KP_Zapisi__Kod_p__5713D034">
+            <End Role="KP_Pacienty" EntitySet="KP_Pacienty" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Polzov__Kod_r__430CD787" Association="Self.FK__KP_Polzov__Kod_r__430CD787">
+            <End Role="KP_Roli" EntitySet="KP_Roli" />
+            <End Role="KP_Polzovateli" EntitySet="KP_Polzovateli" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Vrachi__Kod_p__47D18CA4" Association="Self.FK__KP_Vrachi__Kod_p__47D18CA4">
+            <End Role="KP_Polzovateli" EntitySet="KP_Polzovateli" />
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Raspis__Kod_v__5066D2A5" Association="Self.FK__KP_Raspis__Kod_v__5066D2A5">
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Zapisi__Kod_s__5807F46D" Association="Self.FK__KP_Zapisi__Kod_s__5807F46D">
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Raspisanie_KP_Status_Vracha" Association="Self.FK_KP_Raspisanie_KP_Status_Vracha">
+            <End Role="KP_Status_Vracha" EntitySet="KP_Status_Vracha" />
+            <End Role="KP_Raspisanie" EntitySet="KP_Raspisanie" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Rezult__Kod_z__5BD88551" Association="Self.FK__KP_Rezult__Kod_z__5BD88551">
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+            <End Role="KP_Rezultaty_priema" EntitySet="KP_Rezultaty_priema" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KP_Vrachi__Kod_s__48C5B0DD" Association="Self.FK__KP_Vrachi__Kod_s__48C5B0DD">
+            <End Role="KP_Specializacii" EntitySet="KP_Specializacii" />
+            <End Role="KP_Vrachi" EntitySet="KP_Vrachi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Zapisi_na_priem_KP_Status_zapisi" Association="Self.FK_KP_Zapisi_na_priem_KP_Status_zapisi">
+            <End Role="KP_Status_zapisi" EntitySet="KP_Status_zapisi" />
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Uslugi_Zapisi_KP_Uslugi" Association="Self.FK_KP_Uslugi_Zapisi_KP_Uslugi">
+            <End Role="KP_Uslugi" EntitySet="KP_Uslugi" />
+            <End Role="KP_Uslugi_Zapisi" EntitySet="KP_Uslugi_Zapisi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem" Association="Self.FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem">
+            <End Role="KP_Zapisi_na_priem" EntitySet="KP_Zapisi_na_priem" />
+            <End Role="KP_Uslugi_Zapisi" EntitySet="KP_Uslugi_Zapisi" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище user84_dbModelContainer" CdmEntityContainer="user84_dbEntities">
+          <EntitySetMapping Name="KP_Pacienty">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Pacienty">
+              <MappingFragment StoreEntitySet="KP_Pacienty">
+                <ScalarProperty Name="Kod_pacienta" ColumnName="Kod_pacienta" />
+                <ScalarProperty Name="Familiya" ColumnName="Familiya" />
+                <ScalarProperty Name="Imya" ColumnName="Imya" />
+                <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+                <ScalarProperty Name="Data_rozhdeniya" ColumnName="Data_rozhdeniya" />
+                <ScalarProperty Name="Pol" ColumnName="Pol" />
+                <ScalarProperty Name="Nomer_polisa" ColumnName="Nomer_polisa" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Polzovateli">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Polzovateli">
+              <MappingFragment StoreEntitySet="KP_Polzovateli">
+                <ScalarProperty Name="Kod_polzovatelya" ColumnName="Kod_polzovatelya" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Parol" ColumnName="Parol" />
+                <ScalarProperty Name="Kod_roli" ColumnName="Kod_roli" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Raspisanie">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Raspisanie">
+              <MappingFragment StoreEntitySet="KP_Raspisanie">
+                <ScalarProperty Name="Kod_slota" ColumnName="Kod_slota" />
+                <ScalarProperty Name="Kod_vracha" ColumnName="Kod_vracha" />
+                <ScalarProperty Name="Data_priema" ColumnName="Data_priema" />
+                <ScalarProperty Name="Vremya_nachala" ColumnName="Vremya_nachala" />
+                <ScalarProperty Name="Vremya_okonchaniya" ColumnName="Vremya_okonchaniya" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Rezultaty_priema">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Rezultaty_priema">
+              <MappingFragment StoreEntitySet="KP_Rezultaty_priema">
+                <ScalarProperty Name="Kod_rezultata" ColumnName="Kod_rezultata" />
+                <ScalarProperty Name="Kod_zapisi" ColumnName="Kod_zapisi" />
+                <ScalarProperty Name="Zhaloby" ColumnName="Zhaloby" />
+                <ScalarProperty Name="Diagnoz" ColumnName="Diagnoz" />
+                <ScalarProperty Name="Naznacheniya" ColumnName="Naznacheniya" />
+                <ScalarProperty Name="Rekomendacii" ColumnName="Rekomendacii" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Roli">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Roli">
+              <MappingFragment StoreEntitySet="KP_Roli">
+                <ScalarProperty Name="Kod_roli" ColumnName="Kod_roli" />
+                <ScalarProperty Name="Nazvanie_roli" ColumnName="Nazvanie_roli" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Specializacii">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Specializacii">
+              <MappingFragment StoreEntitySet="KP_Specializacii">
+                <ScalarProperty Name="Kod_specializacii" ColumnName="Kod_specializacii" />
+                <ScalarProperty Name="Nazvanie_specializacii" ColumnName="Nazvanie_specializacii" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Status_Vracha">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Status_Vracha">
+              <MappingFragment StoreEntitySet="KP_Status_Vracha">
+                <ScalarProperty Name="Kod_Statusa" ColumnName="Kod_Statusa" />
+                <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Status_zapisi">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Status_zapisi">
+              <MappingFragment StoreEntitySet="KP_Status_zapisi">
+                <ScalarProperty Name="Kod_Statusa" ColumnName="Kod_Statusa" />
+                <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Uslugi">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Uslugi">
+              <MappingFragment StoreEntitySet="KP_Uslugi">
+                <ScalarProperty Name="Kod_uslugi" ColumnName="Kod_uslugi" />
+                <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+                <ScalarProperty Name="Stoimost" ColumnName="Stoimost" />
+                <ScalarProperty Name="image" ColumnName="image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Uslugi_Zapisi">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Uslugi_Zapisi">
+              <MappingFragment StoreEntitySet="KP_Uslugi_Zapisi">
+                <ScalarProperty Name="Kod_uslugi_zapisi" ColumnName="Kod_uslugi_zapisi" />
+                <ScalarProperty Name="Kod_Uslugi" ColumnName="Kod_Uslugi" />
+                <ScalarProperty Name="Kod_Zapisi" ColumnName="Kod_Zapisi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Vrachi">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Vrachi">
+              <MappingFragment StoreEntitySet="KP_Vrachi">
+                <ScalarProperty Name="Kod_vracha" ColumnName="Kod_vracha" />
+                <ScalarProperty Name="Kod_polzovatelya" ColumnName="Kod_polzovatelya" />
+                <ScalarProperty Name="Familiya" ColumnName="Familiya" />
+                <ScalarProperty Name="Imya" ColumnName="Imya" />
+                <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+                <ScalarProperty Name="Kod_specializacii" ColumnName="Kod_specializacii" />
+                <ScalarProperty Name="Nomer_kabineta" ColumnName="Nomer_kabineta" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KP_Zapisi_na_priem">
+            <EntityTypeMapping TypeName="user84_dbModel.KP_Zapisi_na_priem">
+              <MappingFragment StoreEntitySet="KP_Zapisi_na_priem">
+                <ScalarProperty Name="Kod_zapisi" ColumnName="Kod_zapisi" />
+                <ScalarProperty Name="Kod_pacienta" ColumnName="Kod_pacienta" />
+                <ScalarProperty Name="Kod_slota" ColumnName="Kod_slota" />
+                <ScalarProperty Name="Data_sozdaniya" ColumnName="Data_sozdaniya" />
+                <ScalarProperty Name="Status_zapisi" ColumnName="Status_zapisi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

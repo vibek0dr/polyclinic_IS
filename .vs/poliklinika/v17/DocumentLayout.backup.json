@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\registratoreditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\registratoreditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\registratoreditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\registratoreditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\registrarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\registrarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\patienteditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\patienteditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\patienteditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\patienteditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\doctoreditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\doctoreditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\doctoreditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\doctoreditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|c:\\users\\drgru\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\appointmentcreatewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\appointmentcreatewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\adtimewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\adtimewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\registrarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\registrarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\doctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\doctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\doctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\doctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\policlinika.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\policlinika.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\adtimewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\adtimewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC22539B-0A5E-4398-9D47-9751A9478A19}|poliklinika\\poliklinika.csproj|solutionrelative:poliklinika\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistratorEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistratorEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\RegistratorEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistratorEditWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\RegistratorEditWindow.xaml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwKwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T16:13:55.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistratorEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistratorEditWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\RegistratorEditWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistratorEditWindow.xaml",
+              "RelativeToolTip": "poliklinika\\RegistratorEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-05T16:13:41.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdTimeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdTimeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\AdTimeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdTimeWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\AdTimeWindow.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T16:09:59.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdTimeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdTimeWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\AdTimeWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdTimeWindow.xaml",
+              "RelativeToolTip": "poliklinika\\AdTimeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-05T16:09:45.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DoctorEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\DoctorEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorEditWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\DoctorEditWindow.xaml.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAmwLYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T15:09:22.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DoctorEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorEditWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\DoctorEditWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorEditWindow.xaml",
+              "RelativeToolTip": "poliklinika\\DoctorEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-05T15:09:01.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdminWindow.xaml.cs*",
+              "RelativeToolTip": "poliklinika\\AdminWindow.xaml.cs*",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAswJAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T15:06:30.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\PatientEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\PatientEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\PatientEditWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\PatientEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T15:05:31.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DoctorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\DoctorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\DoctorWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T15:05:07.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "policlinika.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\policlinika.edmx",
+              "RelativeDocumentMoniker": "poliklinika\\policlinika.edmx",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\policlinika.edmx [Diagram1]",
+              "RelativeToolTip": "poliklinika\\policlinika.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-11-05T14:47:52.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistrarWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistrarWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\RegistrarWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistrarWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\RegistrarWindow.xaml.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAawD4BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T10:23:01.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T09:43:55.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppointmentCreateWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AppointmentCreateWindow.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\AppointmentCreateWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AppointmentCreateWindow.xaml.cs",
+              "RelativeToolTip": "poliklinika\\AppointmentCreateWindow.xaml.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwFcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T09:43:09.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\App.xaml.cs",
+              "RelativeDocumentMoniker": "poliklinika\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\App.xaml.cs",
+              "RelativeToolTip": "poliklinika\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T09:42:37.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\App.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\App.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\App.xaml",
+              "RelativeToolTip": "poliklinika\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-31T10:47:46.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\AdminWindow.xaml",
+              "RelativeToolTip": "poliklinika\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-30T12:19:48.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\PatientEditWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\PatientEditWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\PatientEditWindow.xaml",
+              "RelativeToolTip": "poliklinika\\PatientEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-30T12:17:35.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegistrarWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistrarWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\RegistrarWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\RegistrarWindow.xaml",
+              "RelativeToolTip": "poliklinika\\RegistrarWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-30T12:16:37.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DoctorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\DoctorWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\DoctorWindow.xaml",
+              "RelativeToolTip": "poliklinika\\DoctorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-30T12:15:54.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "poliklinika\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\drgru\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041A\u043E\u043B\u043B\u0435\u0434\u0436\\\u043A\u0443\u0440\u0441\u0430\u0447\\poliklinika\\poliklinika\\LoginWindow.xaml",
+              "RelativeToolTip": "poliklinika\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-30T12:14:00.156Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

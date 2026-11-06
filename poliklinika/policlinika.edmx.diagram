@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8b5deb6caea944cfa76700832dfea364" Name="Diagram1">
+        <EntityTypeShape EntityType="user84_dbModel.KP_Pacienty" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Polzovateli" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Raspisanie" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Rezultaty_priema" Width="1.5" PointX="12" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Roli" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Specializacii" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Status_Vracha" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Status_zapisi" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Uslugi" Width="1.5" PointX="9.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Uslugi_Zapisi" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Vrachi" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="user84_dbModel.KP_Zapisi_na_priem" Width="1.5" PointX="9.75" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Zapisi__Kod_p__5713D034" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Polzov__Kod_r__430CD787" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Vrachi__Kod_p__47D18CA4" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Raspis__Kod_v__5066D2A5" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Zapisi__Kod_s__5807F46D" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK_KP_Raspisanie_KP_Status_Vracha" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Rezult__Kod_z__5BD88551" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK__KP_Vrachi__Kod_s__48C5B0DD" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK_KP_Zapisi_na_priem_KP_Status_zapisi" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK_KP_Uslugi_Zapisi_KP_Uslugi" ManuallyRouted="false" />
+        <AssociationConnector Association="user84_dbModel.FK_KP_Uslugi_Zapisi_KP_Zapisi_na_priem" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
